@@ -1,0 +1,27 @@
+.banner-full-container {
+    background-image: url("../../assets/banner-1.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+.banner {
+    background-image: url("../../assets/banner-2.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+.details {
+    position: relative;
+    text-align: left;
+    top: 50px;
+}
+
+.right {
+    left: 20%;
+    width: 400px;
+}
+
+.left {
+    left: 60%;
+    width: 30%;
+}

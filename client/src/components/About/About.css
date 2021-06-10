@@ -1,0 +1,27 @@
+h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: purple;
+    letter-spacing: 2px;
+}
+
+p {
+    width: 80%;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+}
+
+.about-details {
+    padding-top: 50px;
+    padding-left: 40%;
+    text-align: left;
+    /* justify-content: center; */
+}

@@ -1,0 +1,17 @@
+.action-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 350px;
+    align-content: center;
+}
+
+.action-details {
+    padding-top: 50px;
+    padding-left: 40%;
+    text-align: left;
+}
+
+.action-details > h3 {
+    margin: 0;
+    color: black;
+}
