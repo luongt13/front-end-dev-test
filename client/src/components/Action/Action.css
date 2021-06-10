@@ -22,4 +22,11 @@
         display: flex;
         flex-direction: column;
     }
+    .action-details {
+        padding-left: 50px;
+    }
+
+    .review-list {
+        margin-top: 20px;
+    }
 }

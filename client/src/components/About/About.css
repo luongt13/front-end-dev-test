@@ -31,5 +31,7 @@ img {
         display: flex;
         flex-direction: column;
     }
-
+    .about-details {
+        padding-left: 50px;
+    }
 }

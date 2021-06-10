@@ -66,4 +66,7 @@ h5 {
         display: flex;
         flex-direction: column;
     }
+    .offer-details {
+        padding-left: 50px;
+    }
 }

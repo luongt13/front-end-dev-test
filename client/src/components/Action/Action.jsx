@@ -18,7 +18,7 @@ export default function Action() {
                 <h3>Lorem Ipsum</h3>
                 <h3>Dolor Sit Amet</h3>
             </div> 
-            <Carousel className="project-list">
+            <Carousel className="review-list">
                 {reviews.map((review) => {
                     return (
                         <CarouselItem reviews={review}/>
