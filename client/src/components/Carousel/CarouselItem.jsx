@@ -1,6 +1,5 @@
-import {useEffect} from 'react'
 import "./CarouselItem.css"
-// import Carousel from 'react-material-ui-carousel'
+
 export default function CarouselItem(props) {
     return (
         <div className="carousel-details">

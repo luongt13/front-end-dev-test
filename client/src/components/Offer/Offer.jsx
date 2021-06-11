@@ -3,17 +3,18 @@ import Calendar from "../../assets/home-retention.svg"
 import Goggles from "../../assets/home-lab.svg"
 import Mask from "../../assets/home-hygiene.svg"
 import Board from "../../assets/home-expertise.svg"
+import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 import {Button} from "@material-ui/core"
 import "./Offer.css"
 
-export default function Offer() {
+export default function Offer(props) {
     return (
-        <div className="offer-container">
+        <div className="offer-container" ref={props.offerRef}>
             <div className="offer-details">
                 <h3>Lorem Ipsum</h3>
                 <h3>Dolor Sit Amet</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque enim quo optio nulla porro illo ipsam sit autem, quidem, earum amet quos soluta nobis fugiat molestias voluptatem minus similique ex.</p>
-                <Button color="primary"> > Lorem Ipsum</Button>
+                <Button color="primary" startIcon={<NavigateNextIcon/>}>Lorem Ipsum</Button>
             </div>
             <div className="offer-img">
                 <div id="calendar">

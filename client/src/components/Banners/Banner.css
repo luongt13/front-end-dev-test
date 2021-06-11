@@ -22,7 +22,7 @@
 
 .left {
     left: 20%;
-    width: 400px;
+    width: 30%;
 }
 
 .right {
@@ -30,9 +30,28 @@
     width: 30%;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 675px) {
     .right {
-        left: 10%;
-        width: 100%
+        left: 0%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .right > p {
+        width: 100%;
+    }
+
+    .left {
+        left: 0%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner {
+        background-image: linear-gradient( rgba(255, 255, 255, 255), rgba(0, 0, 0, 0.5) ), url("../../assets/banner-2.jpg");
+    }
+
+    .banner-full-container {
+        background-image: linear-gradient( rgba(255, 255, 255, 255), rgba(0, 0, 0, 0.5) ), url("../../assets/banner-1.jpg");
     }
 }

@@ -45,7 +45,6 @@ h5 {
 
 #board {
     grid-area: A;
-
 }
 
 #mask {
@@ -60,8 +59,11 @@ h5 {
     grid-area: D;
 }
 
+#calendar:hover, #goggles:hover, #mask:hover, #board:hover {
+    opacity: 0.5 
+}
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:675px) {
     .offer-container {
         display: flex;
         flex-direction: column;

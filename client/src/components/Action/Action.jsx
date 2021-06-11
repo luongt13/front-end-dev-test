@@ -4,11 +4,12 @@ import Rating from "@material-ui/lab/Rating"
 import Carousel from 'react-material-ui-carousel'
 import {data} from "../../data.js"
 import "./Action.css"
-export default function Action() {
+export default function Action(props) {
     const [reviews, setReviews] = useState([])
     const [rating, setRating]  = useState(0)
     useEffect(() => {
         fetch()
+        // eslint-disable-next-line
     }, [])
 
     function fetch() {
@@ -24,7 +25,7 @@ export default function Action() {
     }
 
     return (
-        <div className="action-container">
+        <div className="action-container" ref={props.actionRef}>
             <div className="action-details">
                 <h3>Lorem Ipsum</h3>
                 <h3>Dolor Sit Amet</h3>
