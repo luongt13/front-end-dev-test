@@ -9,7 +9,7 @@ export default function LandingDetails() {
             setPageLoad(true)
         }, 3000)
     },[])
-    console.log(pageLoad)
+
     return (
         // <div className="landing-details">
         <div className={pageLoad ? "landing-details show" : "landing-details"}>
