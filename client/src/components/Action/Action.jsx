@@ -13,16 +13,22 @@ export default function Action() {
 
     function fetch() {
         setReviews(data)
+        getStars(data)
     }
-    console.log(reviews)
 
-    
+    function getStars(n) {
+        let stars = n.map((item) => {
+            return item.rating
+        })
+        setRating(Math.floor(stars.reduce((acc, c) => acc + c))/stars.length)
+    }
+
     return (
         <div className="action-container">
             <div className="action-details">
                 <h3>Lorem Ipsum</h3>
                 <h3>Dolor Sit Amet</h3>
-                <Rating name="read-only" value="2" readOnly/>
+                <Rating name="read-only" value={rating} readOnly/>
             </div> 
             <Carousel className="review-list">
                 {reviews.map((review, index) => {
@@ -32,7 +38,6 @@ export default function Action() {
                         </div>
                     )
                 })}
-                
             </Carousel>
         </div>
     )
